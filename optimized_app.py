@@ -12,7 +12,7 @@ from datetime import datetime
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
-class OptimizedEmotionDetectionApp:
+class hari7261EmotionDetectionApp:
     def __init__(self, window, window_title):
         self.window = window
         self.window.title(window_title)
@@ -25,7 +25,7 @@ class OptimizedEmotionDetectionApp:
         # Initialize CSV data storage
         self.init_csv_storage()
 
-        # Video capture with optimized settings
+        # Video capture with hari7261 settings
         self.vid = cv2.VideoCapture(0)
         self.vid.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
         self.vid.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
@@ -159,7 +159,7 @@ class OptimizedEmotionDetectionApp:
         # Title
         title_label = tk.Label(
             self.window,
-            text="Real-Time Emotion Detection (Optimized)",
+            text="Real-Time Emotion Detection (hari7261)",
             font=("Helvetica", 24, "bold"),
             bg='#2C3E50',
             fg='white'
@@ -345,7 +345,7 @@ class OptimizedEmotionDetectionApp:
             return None, None
 
     def update(self):
-        """Update video frame with optimized processing"""
+        """Update video frame with hari7261 processing"""
         if self.is_running:
             ret, frame = self.vid.read()
 
@@ -668,4 +668,4 @@ class OptimizedEmotionDetectionApp:
         self.window.destroy()
 
 if __name__ == "__main__":
-    app = OptimizedEmotionDetectionApp(tk.Tk(), "Emotion Detection App")
+    app = hari7261EmotionDetectionApp(tk.Tk(), "Emotion Detection App")
